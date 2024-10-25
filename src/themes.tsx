@@ -10,6 +10,7 @@ type theme = {
     height: number;
     url: string;
     tags: tag[];
+    alt: string;
 }
 
 const themes: theme[] = [
@@ -21,7 +22,8 @@ const themes: theme[] = [
         tags: [
             { value: "Movie", title: "Movie" }
         ],
-        url: 'https://chromewebstore.google.com/detail/blade-runner-chrome-theme/hhokgonhmnigmfgpbfjenabkddbgmohk?authuser=1&hl=en'
+        url: 'https://chromewebstore.google.com/detail/blade-runner-chrome-theme/hhokgonhmnigmfgpbfjenabkddbgmohk?authuser=1&hl=en',
+        alt: 'Blade Runner Theme'
     },
     {
         name: "Sleep Token",
@@ -33,6 +35,7 @@ const themes: theme[] = [
             { value: "Band", title: "Band" },
         ],
         url: 'https://chromewebstore.google.com/detail/sleep-token-chrome-theme/flmikamoipjdpofeacmcikblbjghnnce?authuser=1&hl=en',
+        alt: 'Sleep Token Theme'
     }
 ];
 export default themes

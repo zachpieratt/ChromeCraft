@@ -1,11 +1,11 @@
 import './style/header.css'
-function MyComponent() {
+function TopHeader() {
     return (
         <div className="topHeader">
-            <h1>ChromeCraft</h1>
-            <p>Browse and Download high quality Google Chrome Themes to personalize your browser experience!</p>
+            <div className="chrome">Chrome</div>
+            <div className="craft">Craft</div>
         </div>
     );
 }
 
-export default MyComponent
+export default TopHeader
