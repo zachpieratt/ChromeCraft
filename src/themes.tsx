@@ -20,7 +20,7 @@ const imgHeight: number = 174;
 const themes: theme[] = [
     {
         name: "Blade Runner",
-        src: "public/themeImages/bladeRunner.png",
+        src: "themeImages/bladeRunner.png",
         width: imgWidth,
         height: imgHeight,
         tags: [
@@ -32,7 +32,7 @@ const themes: theme[] = [
     },
     {
         name: "Sleep Token",
-        src: "public/themeImages/sleepToken.png",
+        src: "themeImages/sleepToken.png",
         width: imgWidth,
         height: imgHeight,
         tags: [
@@ -45,7 +45,7 @@ const themes: theme[] = [
     },
     {
         name: "ACOTAR - Night Court",
-        src: "public/themeImages/acotarNightCourt.png",
+        src: "themeImages/acotarNightCourt.png",
         width: imgWidth,
         height: imgHeight,
         tags: [
