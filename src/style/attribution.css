@@ -1,0 +1,28 @@
+.ghLogo {
+    max-width: 2vh;
+    height: auto;
+}
+
+a:link {
+    color: #5ccded;
+}
+
+a:visited {
+    color: #5ccded;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background: #68126d;
+    background: linear-gradient(to right, #1b3864 0%, #68126d 100%);
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
