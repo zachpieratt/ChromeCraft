@@ -1,5 +1,5 @@
 html {
-    background-image: url('./public/web-background.jpg');
+    background-image: url('/web-background.jpg');
     min-height: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;

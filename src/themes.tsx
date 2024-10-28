@@ -13,7 +13,7 @@ type theme = {
     alt: string;
     nano: string;
 }
-let base64Loader: string = './src/assets/loader.gif';
+let base64Loader: string = '/loader.gif';
 const imgWidth: number = 320;
 const imgHeight: number = 174;
 

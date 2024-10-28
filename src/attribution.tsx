@@ -9,7 +9,7 @@ let currentYear: string = new Date().getFullYear().toString();
 const Attribution = () => {
     return (
         <div className="footer">
-            <img className="ghLogo" src="./src/assets/github.png" />
+            <img className="ghLogo" src="/github.png" />
             <br />
             <span >{currentYear}</span>
             <span> Zach Pieratt</span>
