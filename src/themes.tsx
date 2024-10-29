@@ -51,7 +51,7 @@ const themes: theme[] = [
         tags: [
             { value: "Books", title: "Books" },
         ],
-        url: 'https://chromewebstore.google.com/detail/dpfjpnaeimodijaklnlcacconffpnlkb',
+        url: 'https://chromewebstore.google.com/detail/acotar-night-court/dpfjpnaeimodijaklnlcacconffpnlkb?authuser=1&hl=en',
         alt: 'ACOTAR - Night Court Theme',
         nano: base64Loader
     }
