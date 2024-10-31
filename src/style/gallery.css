@@ -42,3 +42,16 @@
     background: rgb(135, 1, 153);
     box-shadow: 0 0 20px #56c7ee;
 }
+
+.custom-overlay__caption {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    max-height: 240px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: white;
+    padding: 2px;
+    font-size: 100%;
+}

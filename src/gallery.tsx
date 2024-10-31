@@ -17,17 +17,26 @@ const styleTag = () => {
 
 const ImageGallery = () => {
 
+    const images = themes.map((theme) => ({
+        ...theme,
+        customOverlay: (
+            <div className="custom-overlay__caption">
+                <div>{theme.name}</div>
+            </div>
+        ),
+    }));
+
     const [tagValue, setTagValue] = useState('');
-    const [themeList, setThemeList] = useState(themes);
+    const [themeList, setThemeList] = useState(images);
 
     useEffect(() => {
         if (tagValue) {
-            const filteredThemes = themes.filter(theme =>
-                theme.tags.some(tag => tag.value === tagValue)
+            const filteredThemes = images.filter(image =>
+                image.tags.some(tag => tag.value === tagValue)
             );
             setThemeList(filteredThemes);
         } else {
-            setThemeList(themes);
+            setThemeList(images);
         }
     }, [tagValue]);
 
@@ -59,7 +68,12 @@ const ImageGallery = () => {
 };
 
 const clickHandler = (_index: number, image: any) => {
-    window.open(image.url);
+    if (image.url == 'Pending') {
+        alert('Theme pending Chrome Store approval, please check back soon!')
+    } else {
+        window.open(image.url);
+    }
+
 };
 
 export default ImageGallery;

@@ -54,6 +54,19 @@ const themes: theme[] = [
         url: 'https://chromewebstore.google.com/detail/acotar-night-court/dpfjpnaeimodijaklnlcacconffpnlkb?authuser=1&hl=en',
         alt: 'ACOTAR - Night Court Theme',
         nano: base64Loader
+    },
+    {
+        name: "G1 Transformers",
+        src: "themeImages/g1Transformers.png",
+        width: imgWidth,
+        height: imgHeight,
+        tags: [
+            { value: "Movies", title: "Movies" },
+            { value: "TV Shows", title: "TV Shows" }
+        ],
+        url: "Pending",
+        alt: "G1 Transformers",
+        nano: base64Loader
     }
 ];
 export default themes
