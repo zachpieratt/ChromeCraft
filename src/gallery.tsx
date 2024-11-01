@@ -3,7 +3,7 @@ import { Gallery } from "react-grid-gallery";
 import themes from "./themes";
 import './style/gallery.css';
 
-const filterList = ['Music', 'Movies', 'Bands', 'Nature', 'Anime', 'Cartoons', 'TV Shows', 'Abstract', 'Books'];
+const filterList = ['Music', 'Movies', 'Bands', 'Nature', 'Anime', 'Cartoons', 'TV Shows', 'Abstract', 'Books', 'Fantasy'].sort();
 
 const styleTag = () => {
     return ({
@@ -11,7 +11,9 @@ const styleTag = () => {
         'background-color': 'black',
         borderRadius: '3px',
         'font-size': 'x-large',
-        'font-family': 'Courier New, monospace'
+        'font-family': 'Courier New, monospace',
+        margin: 2,
+        'font-weight': 'bold'
     });
 }
 

@@ -50,6 +50,7 @@ const themes: theme[] = [
         height: imgHeight,
         tags: [
             { value: "Books", title: "Books" },
+            { value: "Fantasy", title: "Fantasy" }
         ],
         url: 'https://chromewebstore.google.com/detail/acotar-night-court/dpfjpnaeimodijaklnlcacconffpnlkb?authuser=1&hl=en',
         alt: 'ACOTAR - Night Court Theme',
@@ -62,9 +63,10 @@ const themes: theme[] = [
         height: imgHeight,
         tags: [
             { value: "Movies", title: "Movies" },
-            { value: "TV Shows", title: "TV Shows" }
+            { value: "TV Shows", title: "TV Shows" },
+            { value: "Cartoons", title: "Cartoons" }
         ],
-        url: "Pending",
+        url: "https://chromewebstore.google.com/detail/transformers-g1-theme/jjohdmihcmhkbfekeiipbbfbnihjhaco?hl=en&authuser=1",
         alt: "G1 Transformers",
         nano: base64Loader
     }
