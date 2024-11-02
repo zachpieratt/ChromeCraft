@@ -1,3 +1,5 @@
+
+
 type tag = {
     value: string;
     title: string;
@@ -13,6 +15,9 @@ type theme = {
     alt: string;
     nano: string;
 }
+const urlEndpoint = 'https://ik.imagekit.io/chromecraft/';
+
+
 let base64Loader: string = '/loader.gif';
 const imgWidth: number = 320;
 const imgHeight: number = 174;
@@ -20,7 +25,7 @@ const imgHeight: number = 174;
 const themes: theme[] = [
     {
         name: "Blade Runner",
-        src: "themeImages/bladeRunner.png",
+        src: `${urlEndpoint}bladeRunner.png`,
         width: imgWidth,
         height: imgHeight,
         tags: [
@@ -32,7 +37,7 @@ const themes: theme[] = [
     },
     {
         name: "Sleep Token",
-        src: "themeImages/sleepToken.png",
+        src: `${urlEndpoint}sleepToken.png`,
         width: imgWidth,
         height: imgHeight,
         tags: [
@@ -45,7 +50,7 @@ const themes: theme[] = [
     },
     {
         name: "ACOTAR - Night Court",
-        src: "themeImages/acotarNightCourt.png",
+        src: `${urlEndpoint}acotarNightCourt.png`,
         width: imgWidth,
         height: imgHeight,
         tags: [
@@ -58,7 +63,7 @@ const themes: theme[] = [
     },
     {
         name: "G1 Transformers",
-        src: "themeImages/g1Transformers.png",
+        src: `${urlEndpoint}g1Transformers.png`,
         width: imgWidth,
         height: imgHeight,
         tags: [

@@ -8,12 +8,12 @@ const filterList = ['Music', 'Movies', 'Bands', 'Nature', 'Anime', 'Cartoons', '
 const styleTag = () => {
     return ({
         color: '#B026FF',
-        'background-color': 'black',
+        'backgroundColor': 'black',
         borderRadius: '3px',
-        'font-size': 'x-large',
-        'font-family': 'Courier New, monospace',
+        'fontSize': 'x-large',
+        'fontFamily': 'Courier New, monospace',
         margin: 2,
-        'font-weight': 'bold'
+        'fontWeight': 'bold'
     });
 }
 
