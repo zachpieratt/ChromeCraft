@@ -8,12 +8,12 @@ const filterList = ['Music', 'Movies', 'Bands', 'Nature', 'Anime', 'Cartoons', '
 const styleTag = () => {
     return ({
         color: '#B026FF',
-        'backgroundColor': 'black',
+        backgroundColor: 'black',
         borderRadius: '3px',
-        'fontSize': 'x-large',
-        'fontFamily': 'Courier New, monospace',
+        fontSize: 'x-large',
+        fontFamily: 'Courier New, monospace',
         margin: 2,
-        'fontWeight': 'bold'
+        fontWeight: 'bold'
     });
 }
 
@@ -29,33 +29,53 @@ const ImageGallery = () => {
     }));
 
     const [tagValue, setTagValue] = useState('');
+    const [searchQuery, setSearchQuery] = useState('');
     const [themeList, setThemeList] = useState(images);
 
     useEffect(() => {
+        let filteredThemes = images;
+
         if (tagValue) {
-            const filteredThemes = images.filter(image =>
+            filteredThemes = filteredThemes.filter(image =>
                 image.tags.some(tag => tag.value === tagValue)
             );
-            setThemeList(filteredThemes);
-        } else {
-            setThemeList(images);
         }
-    }, [tagValue]);
+
+        if (searchQuery) {
+            filteredThemes = filteredThemes.filter(image =>
+                image.name.toLowerCase().includes(searchQuery.toLowerCase())
+            );
+        }
+
+        setThemeList(filteredThemes);
+    }, [tagValue, searchQuery]);
 
     const handleTagChange = (event: any) => {
         setTagValue(event.target.value);
     };
 
+    const handleSearchChange = (event: any) => {
+        setSearchQuery(event.target.value);
+    };
+
     return (
         <div>
-            <select id="tagSelect" onChange={handleTagChange} value={tagValue}>
-                <option value="">All Themes &crarr;</option>
-                {filterList.map((filter) => (
-                    <option key={filter} value={filter}>
-                        {filter}
-                    </option>
-                ))}
-            </select>
+            <div className="filter-container">
+                <select id="tagSelect" onChange={handleTagChange} value={tagValue}>
+                    <option value="">All Themes &crarr;</option>
+                    {filterList.map((filter) => (
+                        <option key={filter} value={filter}>
+                            {filter}
+                        </option>
+                    ))}
+                </select>
+                <input
+                    type="text"
+                    placeholder="Search themes by name..."
+                    value={searchQuery}
+                    onChange={handleSearchChange}
+                />
+            </div>
             <Gallery
                 images={themeList}
                 onClick={clickHandler}
@@ -63,19 +83,17 @@ const ImageGallery = () => {
                 margin={6}
                 rowHeight={300}
                 tagStyle={styleTag}
-
             />
         </div>
     );
 };
 
 const clickHandler = (_index: number, image: any) => {
-    if (image.url == 'Pending') {
-        alert('Theme pending Chrome Store approval, please check back soon!')
+    if (image.url === 'Pending') {
+        alert('Theme pending Chrome Store approval, please check back soon!');
     } else {
         window.open(image.url);
     }
-
 };
 
 export default ImageGallery;

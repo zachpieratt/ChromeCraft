@@ -1,27 +1,19 @@
 #tagSelect {
     background-color: #1a1a2e;
-    /* Dark background similar to the image */
     color: #ffffff;
-    /* White text for contrast */
     border: 2px solid #00ffff;
-    /* Neon blue border matching the glowing lines */
     border-radius: 5px;
-    /* Slightly rounded corners for a smooth look */
     padding: 10px;
     font-size: 16px;
     outline: none;
     appearance: none;
-    /* Remove default arrow */
     box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
-    /* Neon glow effect */
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 #tagSelect:hover {
     border-color: #ff00ff;
-    /* Change to purple on hover, similar to the image hues */
     box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
-    /* Glow changes to purple */
 }
 
 #tagSelect:focus {
@@ -31,9 +23,7 @@
 
 #tagSelect option {
     background-color: #1a1a2e;
-    /* Ensure options also have the dark background */
     color: #ffffff;
-    /* Consistent white text */
 }
 
 
@@ -53,5 +43,39 @@
     width: 100%;
     color: white;
     padding: 2px;
-    font-size: 100%;
+    font-size: 150%;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+#tagSelect {
+    flex: 1;
+    max-width: 200px;
+}
+
+input[type="text"] {
+    flex: 1;
+    max-width: 300px;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+    background-color: #1a1a2e;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+input[type="text"]:focus {
+    border-color: #ff00ff;
+    box-shadow: 0 0 15px #ff00ff, 0 0 30px #ff00ff;
+}
+
+input[type="text"]:hover {
+    border-color: #ff00ff;
+    box-shadow: 0 0 15px #ff00ff, 0 0 30px #ff00ff;
 }

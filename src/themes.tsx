@@ -15,12 +15,14 @@ type theme = {
     alt: string;
     nano: string;
 }
-const urlEndpoint = 'https://ik.imagekit.io/chromecraft/';
+
 
 
 let base64Loader: string = '/loader.gif';
-const imgWidth: number = 320;
-const imgHeight: number = 174;
+const imgWidth: number = 464;
+const imgHeight: number = 300;
+
+const urlEndpoint = `https://ik.imagekit.io/chromecraft/tr:h-${imgHeight},w-${imgWidth}/`;
 
 const themes: theme[] = [
     {
@@ -73,6 +75,20 @@ const themes: theme[] = [
         ],
         url: "https://chromewebstore.google.com/detail/transformers-g1-theme/jjohdmihcmhkbfekeiipbbfbnihjhaco?hl=en&authuser=1",
         alt: "G1 Transformers",
+        nano: base64Loader
+    },
+    {
+        name: "Ronin Warriors",
+        src: `${urlEndpoint}roninWarriors.png`,
+        width: imgWidth,
+        height: imgHeight,
+        tags: [
+            { value: "Anime", title: "Anime" },
+            { value: "TV Shows", title: "TV Shows" },
+            { value: "Cartoons", title: "Cartoons" }
+        ],
+        url: "Pending",
+        alt: "Ronin Warriors",
         nano: base64Loader
     }
 ];
