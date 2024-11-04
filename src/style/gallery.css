@@ -79,3 +79,10 @@ input[type="text"]:hover {
     border-color: #ff00ff;
     box-shadow: 0 0 15px #ff00ff, 0 0 30px #ff00ff;
 }
+
+.no-themes-message {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-top: 20px;
+}

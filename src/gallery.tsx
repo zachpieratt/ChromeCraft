@@ -57,6 +57,7 @@ const ImageGallery = () => {
     const handleSearchChange = (event: any) => {
         setSearchQuery(event.target.value);
     };
+    const noThemesMsg = `No themes for: "${searchQuery}" located.`;
 
     return (
         <div>
@@ -76,14 +77,18 @@ const ImageGallery = () => {
                     onChange={handleSearchChange}
                 />
             </div>
-            <Gallery
-                images={themeList}
-                onClick={clickHandler}
-                enableImageSelection={false}
-                margin={6}
-                rowHeight={300}
-                tagStyle={styleTag}
-            />
+            {themeList.length > 0 ? (
+                <Gallery
+                    images={themeList}
+                    onClick={clickHandler}
+                    enableImageSelection={false}
+                    margin={6}
+                    rowHeight={300}
+                    tagStyle={styleTag}
+                />
+            ) : (
+                <div className="no-themes-message">{noThemesMsg}<br /> Check again later or request a new theme!</div>
+            )}
         </div>
     );
 };
