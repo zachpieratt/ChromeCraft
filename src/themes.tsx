@@ -87,8 +87,8 @@ const themes: theme[] = [
             { value: "TV Shows", title: "TV Shows" },
             { value: "Cartoons", title: "Cartoons" }
         ],
-        url: "Pending",
-        alt: "https://chromewebstore.google.com/detail/ronin-warriors-theme/gpfcjgbljcipdaheihanogpogccmdjmk",
+        url: "https://chromewebstore.google.com/detail/ronin-warriors-theme/gpfcjgbljcipdaheihanogpogccmdjmk",
+        alt: "Ronin Warriors",
         nano: base64Loader
     }
 ];
