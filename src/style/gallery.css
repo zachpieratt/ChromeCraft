@@ -86,3 +86,18 @@ input[type="text"]:hover {
     color: #ffffff;
     margin-top: 20px;
 }
+
+.pagination-controls {
+    text-align: center;
+    font-weight: bold;
+}
+
+.pagination-controls button {
+    background-color: rgb(135, 1, 153);
+    color: white;
+    margin: 10px;
+}
+
+.pagination-controls button:disabled {
+    background-color: grey;
+}
