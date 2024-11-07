@@ -101,7 +101,7 @@ const themes: theme[] = [
             { value: "Movies", title: "Movies" },
             { value: "Sci-Fi", title: "Sci-Fi" }
         ],
-        url: "Pending",
+        url: "https://chromewebstore.google.com/detail/starship-troopers/ecofplpilnkielmeeomhobempcagjepp",
         alt: "Starship Troopers Theme",
         nano: base64Loader
     }
