@@ -3,7 +3,7 @@ import { Gallery } from "react-grid-gallery";
 import themes from "./themes";
 import './style/gallery.css';
 
-const filterList = ['Music', 'Movies', 'Bands', 'Nature', 'Anime', 'Cartoons', 'TV Shows', 'Abstract', 'Books', 'Fantasy'].sort();
+const filterList = ['Music', 'Movies', 'Bands', 'Nature', 'Anime', 'Cartoons', 'TV Shows', 'Abstract', 'Books', 'Fantasy', 'Sci-Fi'].sort();
 
 const styleTag = () => {
     return ({

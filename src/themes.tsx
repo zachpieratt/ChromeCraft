@@ -31,7 +31,8 @@ const themes: theme[] = [
         width: imgWidth,
         height: imgHeight,
         tags: [
-            { value: "Movies", title: "Movies" }
+            { value: "Movies", title: "Movies" },
+            { value: "Sci-Fi", title: "Sci-Fi" }
         ],
         url: 'https://chromewebstore.google.com/detail/blade-runner-chrome-theme/hhokgonhmnigmfgpbfjenabkddbgmohk?authuser=1&hl=en',
         alt: 'Blade Runner Theme',
@@ -74,7 +75,7 @@ const themes: theme[] = [
             { value: "Cartoons", title: "Cartoons" }
         ],
         url: "https://chromewebstore.google.com/detail/transformers-g1-theme/jjohdmihcmhkbfekeiipbbfbnihjhaco?hl=en&authuser=1",
-        alt: "G1 Transformers",
+        alt: "G1 Transformers Theme",
         nano: base64Loader
     },
     {
@@ -88,7 +89,20 @@ const themes: theme[] = [
             { value: "Cartoons", title: "Cartoons" }
         ],
         url: "https://chromewebstore.google.com/detail/ronin-warriors-theme/gpfcjgbljcipdaheihanogpogccmdjmk",
-        alt: "Ronin Warriors",
+        alt: "Ronin Warriors Theme",
+        nano: base64Loader
+    },
+    {
+        name: "Starship Troopers",
+        src: `${urlEndpoint}starshipTroopers.png`,
+        width: imgWidth,
+        height: imgHeight,
+        tags: [
+            { value: "Movies", title: "Movies" },
+            { value: "Sci-Fi", title: "Sci-Fi" }
+        ],
+        url: "Pending",
+        alt: "Starship Troopers Theme",
         nano: base64Loader
     }
 ];
