@@ -36,7 +36,7 @@ const themeList: theme[] = [
             { value: "Movies", title: "Movies" },
             { value: "Sci-Fi", title: "Sci-Fi" }
         ],
-        url: 'https://chromewebstore.google.com/detail/blade-runner-chrome-theme/hhokgonhmnigmfgpbfjenabkddbgmohk?authuser=1&hl=en',
+        url: 'https://chromewebstore.google.com/detail/blade-runner-chrome-theme/hhokgonhmnigmfgpbfjenabkddbgmohk',
         alt: 'Blade Runner Theme',
         nano: base64Loader
     },
@@ -50,7 +50,7 @@ const themeList: theme[] = [
             { value: "Music", title: "Music" },
             { value: "Bands", title: "Bands" },
         ],
-        url: 'https://chromewebstore.google.com/detail/sleep-token-chrome-theme/flmikamoipjdpofeacmcikblbjghnnce?authuser=1&hl=en',
+        url: 'https://chromewebstore.google.com/detail/sleep-token-chrome-theme/flmikamoipjdpofeacmcikblbjghnnce',
         alt: 'Sleep Token Theme',
         nano: base64Loader
     },
@@ -64,7 +64,7 @@ const themeList: theme[] = [
             { value: "Books", title: "Books" },
             { value: "Fantasy", title: "Fantasy" }
         ],
-        url: 'https://chromewebstore.google.com/detail/acotar-night-court/dpfjpnaeimodijaklnlcacconffpnlkb?authuser=1&hl=en',
+        url: 'https://chromewebstore.google.com/detail/acotar-night-court/dpfjpnaeimodijaklnlcacconffpnlkb',
         alt: 'ACOTAR - Night Court Theme',
         nano: base64Loader
     },
@@ -79,7 +79,7 @@ const themeList: theme[] = [
             { value: "TV Shows", title: "TV Shows" },
             { value: "Cartoons", title: "Cartoons" }
         ],
-        url: "https://chromewebstore.google.com/detail/transformers-g1-theme/jjohdmihcmhkbfekeiipbbfbnihjhaco?hl=en&authuser=1",
+        url: "https://chromewebstore.google.com/detail/transformers-g1-theme/jjohdmihcmhkbfekeiipbbfbnihjhaco",
         alt: "G1 Transformers Theme",
         nano: base64Loader
     },
@@ -123,7 +123,7 @@ const themeList: theme[] = [
             { value: "TV Shows", title: "TV Shows" },
             { value: "Cartoons", title: "Cartoons" }
         ],
-        url: "Pending",
+        url: "https://chromewebstore.google.com/detail/yu-gi-oh-theme/gcohhapgdpodaiepinmaglljiaplmcff",
         alt: "YuGiOh Theme",
         nano: base64Loader
     }
