@@ -14,19 +14,21 @@ type theme = {
     tags: tag[];
     alt: string;
     nano: string;
+    id: number;
 }
 
 
 
-let base64Loader: string = '/loader.gif';
+let base64Loader: string = 'https://ik.imagekit.io/chromecraft/loader.gif?updatedAt=1730996295578';
 const imgWidth: number = 464;
 const imgHeight: number = 300;
 
 const urlEndpoint = `https://ik.imagekit.io/chromecraft/tr:h-${imgHeight},w-${imgWidth}/`;
 
-const themes: theme[] = [
+const themeList: theme[] = [
     {
         name: "Blade Runner",
+        id: 1,
         src: `${urlEndpoint}bladeRunner.png`,
         width: imgWidth,
         height: imgHeight,
@@ -40,6 +42,7 @@ const themes: theme[] = [
     },
     {
         name: "Sleep Token",
+        id: 2,
         src: `${urlEndpoint}sleepToken.png`,
         width: imgWidth,
         height: imgHeight,
@@ -53,6 +56,7 @@ const themes: theme[] = [
     },
     {
         name: "ACOTAR - Night Court",
+        id: 3,
         src: `${urlEndpoint}acotarNightCourt.png`,
         width: imgWidth,
         height: imgHeight,
@@ -66,6 +70,7 @@ const themes: theme[] = [
     },
     {
         name: "G1 Transformers",
+        id: 4,
         src: `${urlEndpoint}g1Transformers.png`,
         width: imgWidth,
         height: imgHeight,
@@ -80,6 +85,7 @@ const themes: theme[] = [
     },
     {
         name: "Ronin Warriors",
+        id: 5,
         src: `${urlEndpoint}roninWarriors.png`,
         width: imgWidth,
         height: imgHeight,
@@ -94,6 +100,7 @@ const themes: theme[] = [
     },
     {
         name: "Starship Troopers",
+        id: 6,
         src: `${urlEndpoint}starshipTroopers.png`,
         width: imgWidth,
         height: imgHeight,
@@ -104,6 +111,23 @@ const themes: theme[] = [
         url: "https://chromewebstore.google.com/detail/starship-troopers/ecofplpilnkielmeeomhobempcagjepp",
         alt: "Starship Troopers Theme",
         nano: base64Loader
+    },
+    {
+        name: "Yu-Gi-Oh!",
+        id: 7,
+        src: `${urlEndpoint}yugioh.png`,
+        width: imgWidth,
+        height: imgHeight,
+        tags: [
+            { value: "Anime", title: "Anime" },
+            { value: "TV Shows", title: "TV Shows" },
+            { value: "Cartoons", title: "Cartoons" }
+        ],
+        url: "Pending",
+        alt: "YuGiOh Theme",
+        nano: base64Loader
     }
 ];
+const themes = themeList.reverse();
+
 export default themes

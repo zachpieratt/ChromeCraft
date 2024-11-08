@@ -76,7 +76,7 @@ const ImageGallery = () => {
         <div>
             <div className="filter-container">
                 <select id="tagSelect" onChange={handleTagChange} value={tagValue}>
-                    <option value="">All Themes &crarr;</option>
+                    <option value="">Latest Themes &crarr;</option>
                     {filterList.map((filter) => (
                         <option key={filter} value={filter}>
                             {filter}
