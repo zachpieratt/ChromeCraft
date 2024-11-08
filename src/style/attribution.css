@@ -3,10 +3,7 @@
     height: 18px;
 }
 
-a:link {
-    color: #5ccded;
-}
-
+a:link,
 a:visited {
     color: #5ccded;
 }

@@ -111,7 +111,7 @@ const ImageGallery = () => {
                     </div>
                 </>
             ) : (
-                <div className="no-themes-message">{noThemesMsg}<br /> Check again later or request a new theme!</div>
+                <div className="no-themes-message">{noThemesMsg}<br />Check again later or request a new theme!</div>
             )}
         </div>
     );

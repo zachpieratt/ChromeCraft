@@ -11,12 +11,14 @@
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-#tagSelect:hover {
+#tagSelect:hover,
+input[type="text"]:hover {
     border-color: #ff00ff;
     box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
 }
 
-#tagSelect:focus {
+#tagSelect:focus,
+input[type="text"]:focus {
     border-color: #ff00ff;
     box-shadow: 0 0 15px #ff00ff, 0 0 30px #ff00ff;
 }
@@ -69,16 +71,6 @@ input[type="text"] {
     background-color: #1a1a2e;
     color: #ffffff;
     font-size: 16px;
-}
-
-input[type="text"]:focus {
-    border-color: #ff00ff;
-    box-shadow: 0 0 15px #ff00ff, 0 0 30px #ff00ff;
-}
-
-input[type="text"]:hover {
-    border-color: #ff00ff;
-    box-shadow: 0 0 15px #ff00ff, 0 0 30px #ff00ff;
 }
 
 .no-themes-message {

@@ -1,10 +1,6 @@
 import './style/attribution.css'
 
-
-
 let currentYear: string = new Date().getFullYear().toString();
-
-
 
 const Attribution = () => {
     return (
