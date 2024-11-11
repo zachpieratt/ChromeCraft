@@ -126,6 +126,20 @@ const themeList: theme[] = [
         url: "https://chromewebstore.google.com/detail/yu-gi-oh-theme/gcohhapgdpodaiepinmaglljiaplmcff",
         alt: "YuGiOh Theme",
         nano: base64Loader
+    },
+    {
+        name: "Gundam Iron-Blooded Orphans",
+        id: 8,
+        src: `${urlEndpoint}gundamIBO.png`,
+        width: imgWidth,
+        height: imgHeight,
+        tags: [
+            { value: "Anime", title: "Anime" },
+            { value: "TV Shows", title: "TV Shows" }
+        ],
+        url: "Pending",
+        alt: "Gundam Iron-Blooded Orphans Theme",
+        nano: base64Loader
     }
 ];
 const themes = themeList.reverse();
