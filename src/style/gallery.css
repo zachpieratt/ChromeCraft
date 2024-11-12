@@ -94,3 +94,32 @@ input[type="text"] {
 .pagination-controls button:disabled {
     background-color: grey;
 }
+
+.ReactGridGallery_tile-description {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    background: linear-gradient(to right, #1b3864 0%, #68126d 100%) !important;
+
+}
+
+.ReactGridGallery_tile-bottom-bar {
+    visibility: hidden !important;
+}
+
+.tagContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.themeName {
+    text-align: left;
+    font-weight: bold;
+}
+
+.tagList {
+    text-align: right;
+}

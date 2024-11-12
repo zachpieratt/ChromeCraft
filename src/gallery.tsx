@@ -3,27 +3,14 @@ import { Gallery } from "react-grid-gallery";
 import themes from "./themes";
 import './style/gallery.css';
 
+
+
 const filterList = ['Music', 'Movies', 'Bands', 'Nature', 'Anime', 'Cartoons', 'TV Shows', 'Abstract', 'Books', 'Fantasy', 'Sci-Fi'].sort();
 
-const styleTag = () => ({
-    color: '#B026FF',
-    backgroundColor: 'black',
-    borderRadius: '3px',
-    fontSize: 'x-large',
-    fontFamily: 'Courier New, monospace',
-    margin: 2,
-    fontWeight: 'bold'
-});
-
 const ImageGallery = () => {
-    const images = themes.map((theme) => ({
-        ...theme,
-        customOverlay: (
-            <div className="custom-overlay__caption">
-                <div>{theme.name}</div>
-            </div>
-        ),
-    }));
+
+
+    const images = themes;
 
     const [tagValue, setTagValue] = useState('');
     const [searchQuery, setSearchQuery] = useState('');
@@ -98,7 +85,6 @@ const ImageGallery = () => {
                         enableImageSelection={false}
                         margin={6}
                         rowHeight={300}
-                        tagStyle={styleTag}
                     />
                     <div className="pagination-controls">
                         <button onClick={goToPreviousPage} disabled={currentPage === 1}>
@@ -124,5 +110,4 @@ const clickHandler = (_index: number, image: any) => {
         window.open(image.url);
     }
 };
-
 export default ImageGallery;

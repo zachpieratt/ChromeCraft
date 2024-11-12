@@ -1,5 +1,3 @@
-
-
 type tag = {
     value: string;
     title: string;
@@ -15,8 +13,8 @@ type theme = {
     alt: string;
     nano: string;
     id: number;
+    thumbnailCaption: any;
 }
-
 
 
 let base64Loader: string = 'https://ik.imagekit.io/chromecraft/loader.gif?updatedAt=1730996295578';
@@ -33,12 +31,13 @@ const themeList: theme[] = [
         width: imgWidth,
         height: imgHeight,
         tags: [
-            { value: "Movies", title: "Movies" },
-            { value: "Sci-Fi", title: "Sci-Fi" }
+            { "value": "Movies", "title": "Movies" },
+            { "value": "Sci-Fi", "title": "Sci-Fi" }
         ],
         url: 'https://chromewebstore.google.com/detail/blade-runner-chrome-theme/hhokgonhmnigmfgpbfjenabkddbgmohk',
         alt: 'Blade Runner Theme',
-        nano: base64Loader
+        nano: base64Loader,
+        thumbnailCaption: ""
     },
     {
         name: "Sleep Token",
@@ -52,7 +51,8 @@ const themeList: theme[] = [
         ],
         url: 'https://chromewebstore.google.com/detail/sleep-token-chrome-theme/flmikamoipjdpofeacmcikblbjghnnce',
         alt: 'Sleep Token Theme',
-        nano: base64Loader
+        nano: base64Loader,
+        thumbnailCaption: ""
     },
     {
         name: "ACOTAR - Night Court",
@@ -66,7 +66,8 @@ const themeList: theme[] = [
         ],
         url: 'https://chromewebstore.google.com/detail/acotar-night-court/dpfjpnaeimodijaklnlcacconffpnlkb',
         alt: 'ACOTAR - Night Court Theme',
-        nano: base64Loader
+        nano: base64Loader,
+        thumbnailCaption: ""
     },
     {
         name: "G1 Transformers",
@@ -81,7 +82,8 @@ const themeList: theme[] = [
         ],
         url: "https://chromewebstore.google.com/detail/transformers-g1-theme/jjohdmihcmhkbfekeiipbbfbnihjhaco",
         alt: "G1 Transformers Theme",
-        nano: base64Loader
+        nano: base64Loader,
+        thumbnailCaption: ""
     },
     {
         name: "Ronin Warriors",
@@ -96,7 +98,8 @@ const themeList: theme[] = [
         ],
         url: "https://chromewebstore.google.com/detail/ronin-warriors-theme/gpfcjgbljcipdaheihanogpogccmdjmk",
         alt: "Ronin Warriors Theme",
-        nano: base64Loader
+        nano: base64Loader,
+        thumbnailCaption: ""
     },
     {
         name: "Starship Troopers",
@@ -110,7 +113,8 @@ const themeList: theme[] = [
         ],
         url: "https://chromewebstore.google.com/detail/starship-troopers/ecofplpilnkielmeeomhobempcagjepp",
         alt: "Starship Troopers Theme",
-        nano: base64Loader
+        nano: base64Loader,
+        thumbnailCaption: ""
     },
     {
         name: "Yu-Gi-Oh!",
@@ -125,7 +129,8 @@ const themeList: theme[] = [
         ],
         url: "https://chromewebstore.google.com/detail/yu-gi-oh-theme/gcohhapgdpodaiepinmaglljiaplmcff",
         alt: "YuGiOh Theme",
-        nano: base64Loader
+        nano: base64Loader,
+        thumbnailCaption: ""
     },
     {
         name: "Gundam Iron-Blooded Orphans",
@@ -139,9 +144,23 @@ const themeList: theme[] = [
         ],
         url: "https://chromewebstore.google.com/detail/gundam-iron-blooded-orpha/dncoeodgjncffgjekoalnogjiadkkple",
         alt: "Gundam Iron-Blooded Orphans Theme",
-        nano: base64Loader
+        nano: base64Loader,
+        thumbnailCaption: ""
     }
 ];
+themeList.forEach(theme => {
+    theme.thumbnailCaption = (
+        <div className="tagContainer">
+            <div className="themeName">
+                {theme.name}
+            </div>
+            <div className="tagList">
+                {theme.tags.map(tag => tag.title).join('  /  ')}
+            </div>
+        </div>
+    );
+});
+
 const themes = themeList.reverse();
 
 export default themes
