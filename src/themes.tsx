@@ -137,7 +137,7 @@ const themeList: theme[] = [
             { value: "Anime", title: "Anime" },
             { value: "TV Shows", title: "TV Shows" }
         ],
-        url: "Pending",
+        url: "https://chromewebstore.google.com/detail/gundam-iron-blooded-orpha/dncoeodgjncffgjekoalnogjiadkkple",
         alt: "Gundam Iron-Blooded Orphans Theme",
         nano: base64Loader
     }
