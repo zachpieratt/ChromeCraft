@@ -12,7 +12,7 @@ type theme = {
     tags: tag[];
     alt: string;
     nano: string;
-    id: number;
+    id: string;
     thumbnailCaption: any;
 }
 
@@ -26,7 +26,7 @@ const urlEndpoint = `https://ik.imagekit.io/chromecraft/tr:h-${imgHeight},w-${im
 const themeList: theme[] = [
     {
         name: "Blade Runner",
-        id: 1,
+        id: "hhokgonhmnigmfgpbfjenabkddbgmohk",
         src: `${urlEndpoint}bladeRunner.png`,
         width: imgWidth,
         height: imgHeight,
@@ -41,7 +41,7 @@ const themeList: theme[] = [
     },
     {
         name: "Sleep Token",
-        id: 2,
+        id: "flmikamoipjdpofeacmcikblbjghnnce",
         src: `${urlEndpoint}sleepToken.png`,
         width: imgWidth,
         height: imgHeight,
@@ -56,7 +56,7 @@ const themeList: theme[] = [
     },
     {
         name: "ACOTAR - Night Court",
-        id: 3,
+        id: "dpfjpnaeimodijaklnlcacconffpnlkb",
         src: `${urlEndpoint}acotarNightCourt.png`,
         width: imgWidth,
         height: imgHeight,
@@ -71,7 +71,7 @@ const themeList: theme[] = [
     },
     {
         name: "G1 Transformers",
-        id: 4,
+        id: "jjohdmihcmhkbfekeiipbbfbnihjhaco",
         src: `${urlEndpoint}g1Transformers.png`,
         width: imgWidth,
         height: imgHeight,
@@ -87,7 +87,7 @@ const themeList: theme[] = [
     },
     {
         name: "Ronin Warriors",
-        id: 5,
+        id: "gpfcjgbljcipdaheihanogpogccmdjmk",
         src: `${urlEndpoint}roninWarriors.png`,
         width: imgWidth,
         height: imgHeight,
@@ -103,7 +103,7 @@ const themeList: theme[] = [
     },
     {
         name: "Starship Troopers",
-        id: 6,
+        id: "ecofplpilnkielmeeomhobempcagjepp",
         src: `${urlEndpoint}starshipTroopers.png`,
         width: imgWidth,
         height: imgHeight,
@@ -118,7 +118,7 @@ const themeList: theme[] = [
     },
     {
         name: "Yu-Gi-Oh!",
-        id: 7,
+        id: "gcohhapgdpodaiepinmaglljiaplmcff",
         src: `${urlEndpoint}yugioh.png`,
         width: imgWidth,
         height: imgHeight,
@@ -134,7 +134,7 @@ const themeList: theme[] = [
     },
     {
         name: "Gundam Iron-Blooded Orphans",
-        id: 8,
+        id: "dncoeodgjncffgjekoalnogjiadkkple",
         src: `${urlEndpoint}gundamIBO.png`,
         width: imgWidth,
         height: imgHeight,
@@ -144,6 +144,21 @@ const themeList: theme[] = [
         ],
         url: "https://chromewebstore.google.com/detail/gundam-iron-blooded-orpha/dncoeodgjncffgjekoalnogjiadkkple",
         alt: "Gundam Iron-Blooded Orphans Theme",
+        nano: base64Loader,
+        thumbnailCaption: ""
+    },
+    {
+        name: "Fourth Wing",
+        id: "bfdginfimjehbionlenblbfppfalfppd",
+        src: `${urlEndpoint}fourthWing.png`,
+        width: imgWidth,
+        height: imgHeight,
+        tags: [
+            { value: "Books", title: "Books" },
+            { value: "Fantasy", title: "Fantasy" }
+        ],
+        url: "Pending",
+        alt: "Fourth Wing Theme",
         nano: base64Loader,
         thumbnailCaption: ""
     }

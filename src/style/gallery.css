@@ -83,6 +83,7 @@ input[type="text"] {
 .pagination-controls {
     text-align: center;
     font-weight: bold;
+    position: static;
 }
 
 .pagination-controls button {
