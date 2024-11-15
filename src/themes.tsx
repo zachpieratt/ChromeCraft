@@ -157,7 +157,7 @@ const themeList: theme[] = [
             { value: "Books", title: "Books" },
             { value: "Fantasy", title: "Fantasy" }
         ],
-        url: "Pending",
+        url: "https://chromewebstore.google.com/detail/fourth-wing-theme/bfdginfimjehbionlenblbfppfalfppd?authuser=0&hl=en",
         alt: "Fourth Wing Theme",
         nano: base64Loader,
         thumbnailCaption: ""
