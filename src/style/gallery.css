@@ -117,10 +117,14 @@ input[type="text"] {
 }
 
 .themeName {
-    text-align: left;
+    text-align: center;
     font-weight: bold;
 }
 
 .tagList {
     text-align: right;
+}
+
+.installCount {
+    text-align: left;
 }

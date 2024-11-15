@@ -14,6 +14,7 @@ type theme = {
     nano: string;
     id: string;
     thumbnailCaption: any;
+    installCount?: number;
 }
 
 
@@ -37,7 +38,8 @@ const themeList: theme[] = [
         url: 'https://chromewebstore.google.com/detail/blade-runner-chrome-theme/hhokgonhmnigmfgpbfjenabkddbgmohk',
         alt: 'Blade Runner Theme',
         nano: base64Loader,
-        thumbnailCaption: ""
+        thumbnailCaption: "",
+        installCount: 112
     },
     {
         name: "Sleep Token",
@@ -52,7 +54,8 @@ const themeList: theme[] = [
         url: 'https://chromewebstore.google.com/detail/sleep-token-chrome-theme/flmikamoipjdpofeacmcikblbjghnnce',
         alt: 'Sleep Token Theme',
         nano: base64Loader,
-        thumbnailCaption: ""
+        thumbnailCaption: "",
+        installCount: 121
     },
     {
         name: "ACOTAR - Night Court",
@@ -67,7 +70,8 @@ const themeList: theme[] = [
         url: 'https://chromewebstore.google.com/detail/acotar-night-court/dpfjpnaeimodijaklnlcacconffpnlkb',
         alt: 'ACOTAR - Night Court Theme',
         nano: base64Loader,
-        thumbnailCaption: ""
+        thumbnailCaption: "",
+        installCount: 245
     },
     {
         name: "G1 Transformers",
@@ -83,7 +87,8 @@ const themeList: theme[] = [
         url: "https://chromewebstore.google.com/detail/transformers-g1-theme/jjohdmihcmhkbfekeiipbbfbnihjhaco",
         alt: "G1 Transformers Theme",
         nano: base64Loader,
-        thumbnailCaption: ""
+        thumbnailCaption: "",
+        installCount: 110
     },
     {
         name: "Ronin Warriors",
@@ -99,7 +104,8 @@ const themeList: theme[] = [
         url: "https://chromewebstore.google.com/detail/ronin-warriors-theme/gpfcjgbljcipdaheihanogpogccmdjmk",
         alt: "Ronin Warriors Theme",
         nano: base64Loader,
-        thumbnailCaption: ""
+        thumbnailCaption: "",
+        installCount: 10
     },
     {
         name: "Starship Troopers",
@@ -114,7 +120,8 @@ const themeList: theme[] = [
         url: "https://chromewebstore.google.com/detail/starship-troopers/ecofplpilnkielmeeomhobempcagjepp",
         alt: "Starship Troopers Theme",
         nano: base64Loader,
-        thumbnailCaption: ""
+        thumbnailCaption: "",
+        installCount: 3
     },
     {
         name: "Yu-Gi-Oh!",
@@ -130,7 +137,8 @@ const themeList: theme[] = [
         url: "https://chromewebstore.google.com/detail/yu-gi-oh-theme/gcohhapgdpodaiepinmaglljiaplmcff",
         alt: "YuGiOh Theme",
         nano: base64Loader,
-        thumbnailCaption: ""
+        thumbnailCaption: "",
+        installCount: 30
     },
     {
         name: "Gundam Iron-Blooded Orphans",
@@ -145,7 +153,8 @@ const themeList: theme[] = [
         url: "https://chromewebstore.google.com/detail/gundam-iron-blooded-orpha/dncoeodgjncffgjekoalnogjiadkkple",
         alt: "Gundam Iron-Blooded Orphans Theme",
         nano: base64Loader,
-        thumbnailCaption: ""
+        thumbnailCaption: "",
+        installCount: 30
     },
     {
         name: "Fourth Wing",
@@ -160,18 +169,23 @@ const themeList: theme[] = [
         url: "https://chromewebstore.google.com/detail/fourth-wing-theme/bfdginfimjehbionlenblbfppfalfppd?authuser=0&hl=en",
         alt: "Fourth Wing Theme",
         nano: base64Loader,
-        thumbnailCaption: ""
+        thumbnailCaption: "",
+        installCount: 0
     }
 ];
 themeList.forEach(theme => {
     theme.thumbnailCaption = (
         <div className="tagContainer">
+            <div className="installCount">
+                {`Installs: ${theme.installCount}`}
+            </div>
             <div className="themeName">
                 {theme.name}
             </div>
             <div className="tagList">
                 {theme.tags.map(tag => tag.title).join('  /  ')}
             </div>
+
         </div>
     );
 });

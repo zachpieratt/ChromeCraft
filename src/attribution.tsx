@@ -12,7 +12,7 @@ const Attribution = () => {
             <br />
             <a href="https://github.com/zachpieratt" target="_blank">Github</a>
             <br />
-            <a href="https://github.com/sponsors/zachpieratt" target="_blank">Donate</a>
+            <a href="https://github.com/sponsors/zachpieratt" target="_blank">Support the Site</a>
         </div>
     )
 };
