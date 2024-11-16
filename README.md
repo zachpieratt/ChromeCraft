@@ -5,6 +5,7 @@
 
 A fast and interactive site to find custom Google Chrome Extensions I have created, built in React. It links directly to the Google Store page to provide safe and easy installations of themes. In order to easily find themes they are tagged by popular categories and allow filtering based on these.
 
-![image](https://github.com/user-attachments/assets/6e720494-d2dc-4094-9a2e-bf5472453566)
+![image](https://github.com/user-attachments/assets/ec618dab-5a6c-483d-a388-f997446f2eab)
+
 
 
