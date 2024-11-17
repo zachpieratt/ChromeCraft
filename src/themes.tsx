@@ -39,7 +39,7 @@ const themeList: theme[] = [
         alt: 'Blade Runner Theme',
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 112
+        installCount: 114
     },
     {
         name: "Sleep Token",
@@ -55,7 +55,7 @@ const themeList: theme[] = [
         alt: 'Sleep Token Theme',
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 121
+        installCount: 124
     },
     {
         name: "ACOTAR - Night Court",
@@ -71,7 +71,7 @@ const themeList: theme[] = [
         alt: 'ACOTAR - Night Court Theme',
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 245
+        installCount: 268
     },
     {
         name: "G1 Transformers",
@@ -88,7 +88,7 @@ const themeList: theme[] = [
         alt: "G1 Transformers Theme",
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 110
+        installCount: 118
     },
     {
         name: "Ronin Warriors",
@@ -121,7 +121,7 @@ const themeList: theme[] = [
         alt: "Starship Troopers Theme",
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 3
+        installCount: 4
     },
     {
         name: "Yu-Gi-Oh!",
@@ -138,7 +138,7 @@ const themeList: theme[] = [
         alt: "YuGiOh Theme",
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 30
+        installCount: 31
     },
     {
         name: "Gundam Iron-Blooded Orphans",
@@ -154,7 +154,7 @@ const themeList: theme[] = [
         alt: "Gundam Iron-Blooded Orphans Theme",
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 30
+        installCount: 40
     },
     {
         name: "Fourth Wing",
@@ -168,6 +168,21 @@ const themeList: theme[] = [
         ],
         url: "https://chromewebstore.google.com/detail/fourth-wing-theme/bfdginfimjehbionlenblbfppfalfppd?authuser=0&hl=en",
         alt: "Fourth Wing Theme",
+        nano: base64Loader,
+        thumbnailCaption: "",
+        installCount: 5
+    },
+    {
+        name: "Fjord",
+        id: "mjegccggkeihpkbkdfgbaekokiefhbai",
+        src: `${urlEndpoint}fjord.png`,
+        width: imgWidth,
+        height: imgHeight,
+        tags: [
+            { value: "Nature", title: "Nature" }
+        ],
+        url: "https://chromewebstore.google.com/detail/fjord-on-the-sea-theme/mjegccggkeihpkbkdfgbaekokiefhbai",
+        alt: "Fjord Theme",
         nano: base64Loader,
         thumbnailCaption: "",
         installCount: 0
