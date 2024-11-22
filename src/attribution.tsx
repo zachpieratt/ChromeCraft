@@ -1,4 +1,5 @@
-import './style/attribution.css'
+import './style/attribution.css';
+
 
 let currentYear: string = new Date().getFullYear().toString();
 
@@ -14,6 +15,7 @@ const Attribution = () => {
             <br />
             <a href="https://github.com/sponsors/zachpieratt" target="_blank">Support the Site</a>
         </div>
+
     )
 };
 

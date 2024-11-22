@@ -39,7 +39,7 @@ const themeList: theme[] = [
         alt: 'Blade Runner Theme',
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 114
+        installCount: 126
     },
     {
         name: "Sleep Token",
@@ -55,7 +55,7 @@ const themeList: theme[] = [
         alt: 'Sleep Token Theme',
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 124
+        installCount: 144
     },
     {
         name: "ACOTAR - Night Court",
@@ -88,7 +88,7 @@ const themeList: theme[] = [
         alt: "G1 Transformers Theme",
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 118
+        installCount: 172
     },
     {
         name: "Ronin Warriors",
@@ -105,7 +105,7 @@ const themeList: theme[] = [
         alt: "Ronin Warriors Theme",
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 10
+        installCount: 14
     },
     {
         name: "Starship Troopers",
@@ -121,7 +121,7 @@ const themeList: theme[] = [
         alt: "Starship Troopers Theme",
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 4
+        installCount: 6
     },
     {
         name: "Yu-Gi-Oh!",
@@ -138,7 +138,7 @@ const themeList: theme[] = [
         alt: "YuGiOh Theme",
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 31
+        installCount: 47
     },
     {
         name: "Gundam Iron-Blooded Orphans",
@@ -154,7 +154,7 @@ const themeList: theme[] = [
         alt: "Gundam Iron-Blooded Orphans Theme",
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 40
+        installCount: 90
     },
     {
         name: "Fourth Wing",
@@ -170,7 +170,7 @@ const themeList: theme[] = [
         alt: "Fourth Wing Theme",
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 5
+        installCount: 25
     },
     {
         name: "Fjord",
@@ -183,6 +183,22 @@ const themeList: theme[] = [
         ],
         url: "https://chromewebstore.google.com/detail/fjord-on-the-sea-theme/mjegccggkeihpkbkdfgbaekokiefhbai",
         alt: "Fjord Theme",
+        nano: base64Loader,
+        thumbnailCaption: "",
+        installCount: 6
+    },
+    {
+        name: "ACOTAR - Summer Court",
+        id: "afjellmjlicocjnnlgfgnpkmjjljafjg",
+        src: `${urlEndpoint}acotarSummerCourt.png`,
+        width: imgWidth,
+        height: imgHeight,
+        tags: [
+            { value: "Books", title: "Books" },
+            { value: "Fantasy", title: "Fantasy" }
+        ],
+        url: "Pending",
+        alt: "ACOTAR - Summer Court Theme",
         nano: base64Loader,
         thumbnailCaption: "",
         installCount: 0
@@ -205,6 +221,7 @@ themeList.forEach(theme => {
     );
 });
 
+
 const themes = themeList.reverse();
 
-export default themes
+export default themes;
