@@ -71,7 +71,7 @@ const themeList: theme[] = [
         alt: 'ACOTAR - Night Court Theme',
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 268
+        installCount: 426
     },
     {
         name: "G1 Transformers",
@@ -197,7 +197,7 @@ const themeList: theme[] = [
             { value: "Books", title: "Books" },
             { value: "Fantasy", title: "Fantasy" }
         ],
-        url: "Pending",
+        url: "https://chromewebstore.google.com/detail/acotar-summer-court-theme/afjellmjlicocjnnlgfgnpkmjjljafjg",
         alt: "ACOTAR - Summer Court Theme",
         nano: base64Loader,
         thumbnailCaption: "",
