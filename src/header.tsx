@@ -7,9 +7,10 @@ const totalInstallCount = themes.reduce((total, theme) => {
 function TopHeader() {
     return (
         <div className="topHeader">
+            <div className='totalInstalls'>Total Themes Installed: {totalInstallCount}</div>
             <div className="chrome">Chrome</div>
             <div className="craft">Craft</div>
-            <div className='totalInstalls'>Total Themes Installed: {totalInstallCount}</div>
+
         </div>
     );
 }
