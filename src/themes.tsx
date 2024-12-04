@@ -39,7 +39,7 @@ const themeList: theme[] = [
         alt: 'Blade Runner Theme',
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 134
+        installCount: 158
     },
     {
         name: "Sleep Token",
@@ -55,7 +55,7 @@ const themeList: theme[] = [
         alt: 'Sleep Token Theme',
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 151
+        installCount: 175
     },
     {
         name: "ACOTAR - Night Court",
@@ -71,7 +71,7 @@ const themeList: theme[] = [
         alt: 'ACOTAR - Night Court Theme',
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 502
+        installCount: 727
     },
     {
         name: "G1 Transformers",
@@ -88,7 +88,7 @@ const themeList: theme[] = [
         alt: "G1 Transformers Theme",
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 194
+        installCount: 251
     },
     {
         name: "Ronin Warriors",
@@ -121,7 +121,7 @@ const themeList: theme[] = [
         alt: "Starship Troopers Theme",
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 7
+        installCount: 9
     },
     {
         name: "Yu-Gi-Oh!",
@@ -138,7 +138,7 @@ const themeList: theme[] = [
         alt: "YuGiOh Theme",
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 51
+        installCount: 73
     },
     {
         name: "Gundam Iron-Blooded Orphans",
@@ -154,7 +154,7 @@ const themeList: theme[] = [
         alt: "Gundam Iron-Blooded Orphans Theme",
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 109
+        installCount: 157
     },
     {
         name: "Fourth Wing",
@@ -170,7 +170,7 @@ const themeList: theme[] = [
         alt: "Fourth Wing Theme",
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 30
+        installCount: 52
     },
     {
         name: "Fjord",
@@ -201,7 +201,23 @@ const themeList: theme[] = [
         alt: "ACOTAR - Summer Court Theme",
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 3
+        installCount: 12
+    },
+    {
+        name: "Interstellar",
+        id: "golfiecdnlminodpnkbfencnhnmppnal",
+        src: `${urlEndpoint}interstellar.png`,
+        width: imgWidth,
+        height: imgHeight,
+        tags: [
+            { value: "Movies", title: "Movies" },
+            { value: "Sci-Fi", title: "Sci-Fi" }
+        ],
+        url: "https://chromewebstore.google.com/detail/interstellar-theme/golfiecdnlminodpnkbfencnhnmppnal",
+        alt: "Interstellar Theme",
+        nano: base64Loader,
+        thumbnailCaption: "",
+        installCount: 0
     }
 ];
 themeList.forEach(theme => {
