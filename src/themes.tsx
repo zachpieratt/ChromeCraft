@@ -39,7 +39,7 @@ const themeList: theme[] = [
         alt: 'Blade Runner Theme',
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 951
+        installCount: 1790
     },
     {
         name: "Sleep Token",
@@ -55,7 +55,7 @@ const themeList: theme[] = [
         alt: 'Sleep Token Theme',
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 1910
+        installCount: 3600
     },
     {
         name: "ACOTAR - Night Court",
@@ -71,7 +71,7 @@ const themeList: theme[] = [
         alt: 'ACOTAR - Night Court Theme',
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 19800
+        installCount: 35200
     },
     {
         name: "G1 Transformers",
@@ -88,7 +88,7 @@ const themeList: theme[] = [
         alt: "G1 Transformers Theme",
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 2010
+        installCount: 3100
     },
     {
         name: "Ronin Warriors",
@@ -105,7 +105,7 @@ const themeList: theme[] = [
         alt: "Ronin Warriors Theme",
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 52
+        installCount: 354
     },
     {
         name: "Starship Troopers",
@@ -121,7 +121,7 @@ const themeList: theme[] = [
         alt: "Starship Troopers Theme",
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 39
+        installCount: 350
     },
     {
         name: "Yu-Gi-Oh!",
@@ -138,7 +138,7 @@ const themeList: theme[] = [
         alt: "YuGiOh Theme",
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 525
+        installCount: 1060
     },
     {
         name: "Gundam Iron-Blooded Orphans",
@@ -154,7 +154,7 @@ const themeList: theme[] = [
         alt: "Gundam Iron-Blooded Orphans Theme",
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 1640
+        installCount: 2650
     },
     {
         name: "Fourth Wing",
@@ -170,7 +170,7 @@ const themeList: theme[] = [
         alt: "Fourth Wing Theme",
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 2990
+        installCount: 4900
     },
     {
         name: "Fjord",
@@ -185,7 +185,7 @@ const themeList: theme[] = [
         alt: "Fjord Theme",
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 326
+        installCount: 720
     },
     {
         name: "ACOTAR - Summer Court",
@@ -201,7 +201,7 @@ const themeList: theme[] = [
         alt: "ACOTAR - Summer Court Theme",
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 1840
+        installCount: 3370
     },
     {
         name: "Interstellar",
@@ -217,24 +217,26 @@ const themeList: theme[] = [
         alt: "Interstellar Theme",
         nano: base64Loader,
         thumbnailCaption: "",
-        installCount: 11200
+        installCount: 23100
     }
 ];
-themeList.forEach(theme => {
-    theme.thumbnailCaption = (
-        <div className="tagContainer">
-            <div className="installCount">
-                {`Installs: ${theme.installCount}`}
-            </div>
-            <div className="themeName">
-                {theme.name}
-            </div>
-            <div className="tagList">
-                {theme.tags.map(tag => tag.title).join('  /  ')}
-            </div>
 
+const renderThumbnailCaption = (theme: theme) => (
+    <div className="tagContainer">
+        <div className="installCount">
+            {`Installs: ${theme.installCount}`}
         </div>
-    );
+        <div className="themeName">
+            {theme.name}
+        </div>
+        <div className="tagList">
+            {theme.tags.map(tag => tag.title).join('  /  ')}
+        </div>
+    </div>
+);
+
+themeList.forEach(theme => {
+    theme.thumbnailCaption = renderThumbnailCaption(theme);
 });
 
 
